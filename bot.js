@@ -228,15 +228,4 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل: **${song.title}**`);
 }
 
-const devs = ['315551239809138688'  '' , '' , ''];
-const adminprefix = "برفكس";
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!devs.includes(message.author.id)) return;
-  if (message.content.startsWith(adminprefix + 'listen')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.sendMessage(`**✅   ${argresult}**`)
-  }
-  });
-
 client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
