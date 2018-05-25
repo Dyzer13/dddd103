@@ -10,15 +10,6 @@ const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 
 
-
-
-
-
-
-
-
-
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`DanMusic`,"http://twitch.tv/clo_wiin")
@@ -44,9 +35,6 @@ client.user.setGame(`DanMusic`,"http://twitch.tv/clo_wiin")
   console.log('')
   console.log('')
 });
-
-
-
 
 
 client.on('warn', console.warn);
