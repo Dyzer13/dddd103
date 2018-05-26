@@ -21,7 +21,7 @@ const queue = new Map();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`KingMas`,"http://twitch.tv/S-F")
+client.user.setGame(`DanMusic`,"http://twitch.tv/clo_wiin")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -254,46 +254,6 @@ client.on("message", message => {
          if(!message.channel.guild) return message.reply('** This command only for servers **');
         message.reply("** تم الارسال فـ الخاص :heavy_check_mark: **")
      }
-});
-
-//
-client.on("message", message => {
- if (message.content === prefix + "help") {
-  const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-      .setThumbnail(message.author.avatarURL)
-      .setDescription(`
-
-** Bot ${client.user.username} Commands **
-● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ●
-** -    [ ${prefix}invites ]  [ لمعرفة عدد الدعوات الخاصة بك في السيرفر ]
-
--    [ ${prefix}ping ]  [ لمعرفة سرعة الاتصال ]
-
--    [ ${prefix}clear ]  [ لحذف الرسائل ]
-
--    [ ${prefix}Date ]  [ لمعرفة الوقت في مصر و مكة والامارات ]
-
--    [ ${prefix}mute ]  [ لعطاء العضو ميوت معا ذكر السبب  ]
-
--    [ ${prefix}unmute ]  [ لازالة الميوت عن العضو  ]
-
--    [ ${prefix}broadcast ]  [ لارسال رسالة لجميع اعضاء السيرفر  ]
-
--    [ ${prefix}avatar ]  [ لظهار الصورة الخاص بـ العضو  ]
-
--    [ ${prefix}users ]  [ لظهار عدد اعضاء السيرفر بشكل مطور  ]
-
--    [ ${prefix}server ]  [ لمعرفة معلومات عن السيرفر ]  **
-
-● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ●
-
-`)
-
-
-message.author.sendEmbed(embed)
-
-}
 });
 
 client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
