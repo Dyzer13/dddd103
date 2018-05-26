@@ -241,4 +241,4 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل: **${song.title}**`);
 }
 
-client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
+client.login('NDUwMDI3Mjg4MzU3MTA5NzYw.DetQwA.t_kK6OL-4-ROQzDpXThz89RZN3Q');
