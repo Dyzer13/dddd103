@@ -241,4 +241,17 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل: **${song.title}**`);
 }
 
+client.on('message', message => {
+    if(message.content === "!DanBotMusic") {
+        const embed = new Discord.RichEmbed()
+        .setColor("#00FFFF")
+  .addField('الذاكرة المستخدمة :floppy_disk:', ${(process.memoryUsage().rss / 1000000).toFixed()}MB, true)
+         .addField('سرعة الاتصال:satellite:' , ${Date.now() - message.createdTimestamp} + ' ms')
+        .addField('استخدام المعالج:cd:', ${(process.cpuUsage().rss / 10000).toFixed()}%, true)
+        .addField(':globe_with_meridians: عدد السيرفرات' , ${client.guilds.size}, true)
+        .addField('عدد المستخدمين :busts_in_silhouette: ' , ${client.users.size}, true)
+               message.channel.sendEmbed(embed);
+           }
+});
+
 client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
