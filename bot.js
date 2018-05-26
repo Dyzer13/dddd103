@@ -21,7 +21,7 @@ const queue = new Map();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`DanMusic`,"http://twitch.tv/clo_wiin")
+client.user.setGame(`KingMas`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -240,20 +240,5 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل: **${song.title}**`);
 }
-
-client.on("message", message => {
-     if (message.content === prefix + "help") {
-         message.react('👌')
-         if(!message.channel.guild) return message.reply('** This command only for servers **');
-        message.reply("** تم الارسال فـ الخاص :heavy_check_mark: **")
-     }
-});
-client.on("message", message => {
-     if (message.content === prefix + "help") {
-         message.react('👌')
-         if(!message.channel.guild) return message.reply('** This command only for servers **');
-        message.reply("** تم الارسال فـ الخاص :heavy_check_mark: **")
-     }
-});
 
 client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
