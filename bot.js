@@ -248,9 +248,17 @@ client.on("message", message => {
         message.reply("** تم الارسال فـ الخاص :heavy_check_mark: **")
      }
 });
+client.on("message", message => {
+     if (message.content === prefix + "help") {
+         message.react('👌')
+         if(!message.channel.guild) return message.reply('** This command only for servers **');
+        message.reply("** تم الارسال فـ الخاص :heavy_check_mark: **")
+     }
+});
+
 //
 client.on("message", message => {
- if (message.content === "!help") {
+ if (message.content === prefix + "help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setThumbnail(message.author.avatarURL)
@@ -287,4 +295,5 @@ message.author.sendEmbed(embed)
 
 }
 });
+
 client.login('NDQ5NTg5NDc1OTkyMDEwNzUy.DenWLQ.CrZsf4oI3W3P1L_gTT8gW7a07ls');
